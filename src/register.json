@@ -1,0 +1,59 @@
+{
+  "records": {
+    "chain": {
+      "label": "Chain",
+      "state": "stated",
+      "value": "Solana",
+      "rpc": "https://solana-rpc.publicnode.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "statedOn": "2026-10-13"
+    },
+    "market": {
+      "label": "Market feed",
+      "state": "stated",
+      "endpoints": {
+        "boosts": "https://api.dexscreener.com/token-boosts/top/v1",
+        "pairs": "https://api.dexscreener.com/tokens/v1/solana/{addresses}"
+      },
+      "source": "client statement",
+      "scope": "batch-level",
+      "statedOn": "2026-10-13"
+    },
+    "ca": {
+      "label": "Contract",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checkedOn": "2026-10-13"
+    },
+    "x": {
+      "label": "X",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checkedOn": "2026-10-13"
+    },
+    "github": {
+      "label": "GitHub",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checkedOn": "2026-10-13"
+    },
+    "supply": {
+      "label": "Supply",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checkedOn": "2026-10-13"
+    },
+    "holders": {
+      "label": "Holders",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checkedOn": "2026-10-13"
+    }
+  }
+}

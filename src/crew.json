@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Helm",
+    "role": "Command",
+    "line": "Sets the plan for the squad and approves each piece prior to release.",
+    "duties": ["Assigns work across the squad", "Checks drafts against the brief", "Holds the final gate"]
+  },
+  {
+    "name": "Scout",
+    "role": "Insight",
+    "line": "Reads the feeds so the squad knows which themes are worth joining.",
+    "duties": ["Tracks rising topics", "Maps neighbouring communities", "Hands Helm a short digest"]
+  },
+  {
+    "name": "Loom",
+    "role": "Pages",
+    "line": "Weaves a clean landing page, then refreshes it as the project evolves.",
+    "duties": ["Builds the project page", "Wires links once they exist", "Keeps everything fast and light"]
+  },
+  {
+    "name": "Quill",
+    "role": "Voice",
+    "line": "Writes captions and threads in a steady tone that fits the project.",
+    "duties": ["Drafts short posts", "Holds one steady tone", "Trims claims down to the facts"]
+  },
+  {
+    "name": "Echo",
+    "role": "Outreach",
+    "line": "Carries approved posts out to every channel and answers the conversation.",
+    "duties": ["Schedules approved posts", "Replies to the crowd", "Reports what landed"]
+  },
+  {
+    "name": "Beacon",
+    "role": "Reach",
+    "line": "Gets the token listed on trackers and introduced to new communities.",
+    "duties": ["Prepares tracker listings", "Opens partner threads", "Logs every contact"]
+  },
+  {
+    "name": "Prism",
+    "role": "Visuals",
+    "line": "Draws banners, stickers and page art so everything reads as one family.",
+    "duties": ["Creates visual sets", "Adapts art per channel", "Guards the visual identity"]
+  }
+]

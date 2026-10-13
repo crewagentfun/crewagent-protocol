@@ -1,0 +1,13 @@
+{
+  "name": "crewagent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Crewagent static site. Output in dist/.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}

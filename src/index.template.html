@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: https:; connect-src 'self' https://api.dexscreener.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<title>Crewagent</title>
+<meta name="description" content="Crewagent seats a coordinated squad on insight, pages, voice, visuals and outreach, plus a live Solana market board.">
+<meta property="og:title" content="Crewagent">
+<meta property="og:description" content="One crew, seven specialists, plus a live Solana market board.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="preload" href="assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/main.css">
+<script src="assets/boot.js"></script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span data-progress></span></div>
+
+<header class="top" data-top>
+  <a class="brand" href="#start" aria-label="Crewagent, back to start">
+    <svg class="brand-mark" viewBox="5 5 22 22" width="28" height="28" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="{{GLYPH_D}}"/></svg>
+    <span class="brand-name">Crewagent</span>
+  </a>
+  <div class="ca-wrap">{{CA}}</div>
+  <div class="socials" role="group" aria-label="Social links">{{X}}{{GITHUB}}</div>
+</header>
+
+<nav class="rail" aria-label="Sections">
+  <a href="#start" class="rail-link" data-nav="start"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>Start</span></a>
+  <a href="#board" class="rail-link" data-nav="board"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 19V9m6 10V5m6 14v-7m4 7H3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span>Board</span></a>
+  <a href="#crew" class="rail-link" data-nav="crew"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M16 5.2a3 3 0 0 1 0 5.6M18 14.8c1.8.7 3 2.3 3 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span>Crew</span></a>
+  <a href="#method" class="rail-link" data-nav="method"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 7h9a4 4 0 0 1 0 8H8m0 0 3-3m-3 3 3 3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Method</span></a>
+  <a href="#records" class="rail-link" data-nav="records"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 4h9l3 3v13H6zM9 12h6M9 16h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Records</span></a>
+</nav>
+
+<main>
+  <section class="hero" id="start" data-section="start">
+    <div class="mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="depth" aria-hidden="true">
+      <div class="layer" data-depth="0.4"><span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span></div>
+      <div class="layer" data-depth="0.9"><span class="gridpatch"></span></div>
+      <div class="layer" data-depth="1.5"><svg class="hero-mark" viewBox="5 5 22 22"><path fill="currentColor" fill-rule="evenodd" d="{{GLYPH_D}}"/></svg></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal><span class="pill"><span class="dot"></span><span data-feed-label>Connecting</span></span></p>
+        <h1 data-reveal>One crew.<br>Seven specialists.<br>Zero dead air.</h1>
+        <p class="lede" data-reveal>Crewagent coordinates insight, pages, voice, visuals and outreach under a single lead, so your community always has something to talk about.</p>
+        <div class="cta" data-reveal>
+          <a class="btn btn-solid" href="#board">Open the board</a>
+          <a class="btn btn-ghost" href="#crew">Meet the crew</a>
+        </div>
+      </div>
+      <aside class="board spot" data-reveal aria-label="Pulse board">
+        <div class="board-head"><span class="board-title">Pulse board</span><span class="pill pill-panel"><span class="dot"></span><span>Streaming</span></span></div>
+        <ul class="board-list" data-board>
+          <li class="skel-row"><i class="skel"></i></li><li class="skel-row"><i class="skel"></i></li><li class="skel-row"><i class="skel"></i></li><li class="skel-row"><i class="skel"></i></li>
+        </ul>
+        <p class="board-foot">Four busiest by trading volume</p>
+      </aside>
+    </div>
+  </section>
+
+  <div class="ticker" aria-label="Market ticker" data-ticker>
+    <div class="ticker-track" data-ticker-track><span class="ticker-item skel-line"><i class="skel"></i></span></div>
+  </div>
+
+  <section class="tiles" aria-label="Snapshot">
+    <div class="tile spot" data-reveal data-tile="pairs"><span class="tile-label">Pairs tracked</span><span class="tile-value" data-num="pairs">&#8212;</span></div>
+    <div class="tile spot" data-reveal data-tile="volume"><span class="tile-label">Combined 24h volume</span><span class="tile-value" data-num="volume">&#8212;</span></div>
+    <div class="tile spot" data-reveal data-tile="mover"><span class="tile-label">Leading mover</span><span class="tile-value" data-mover>&#8212;</span></div>
+    <div class="tile spot" data-reveal data-tile="chain"><span class="tile-label">Chain</span><span class="tile-value" data-chain>{{CHAIN}}</span></div>
+    {{TILE_SUPPLY}}
+    {{TILE_HOLDERS}}
+  </section>
+
+  <section class="block" id="board" data-section="board">
+    <div class="block-head" data-reveal>
+      <div><h2>Market board</h2><p class="sub">Ten Solana tokens with the heaviest 24h turnover, straight from the open feed.</p></div>
+      <span class="pill"><span class="dot"></span><span data-feed-label>Connecting</span></span>
+    </div>
+    <div class="table" role="table" aria-label="Top ten Solana tokens by 24h volume">
+      <div class="trow thead" role="row">
+        <span role="columnheader">#</span><span role="columnheader">Token</span><span role="columnheader" class="num">Price</span><span role="columnheader" class="num">24h</span><span role="columnheader" class="num">Volume</span><span role="columnheader" class="num">Liquidity</span><span role="columnheader" class="copycol"><span class="sr-only">Copy address</span></span>
+      </div>
+      <div class="tbody" data-rows role="rowgroup"></div>
+      <p class="feed-error" data-feed-error role="alert" hidden>Market source unreachable. Retrying with backoff.</p>
+    </div>
+  </section>
+
+  <section class="block" id="crew" data-section="crew">
+    <div class="block-head" data-reveal><div><h2>The crew</h2><p class="sub">Seven specialists, every one owns a lane, all reporting to Helm.</p></div></div>
+    <div class="crew" data-reveal>
+      <div class="crew-tabs" role="tablist" aria-label="Crew members" aria-orientation="vertical">{{CREW_TABS}}</div>
+      <div class="crew-stage spot">{{CREW_PANELS}}</div>
+    </div>
+  </section>
+
+  <section class="block" id="method" data-section="method">
+    <div class="block-head" data-reveal><div><h2>How a day runs</h2><p class="sub">A loop the squad repeats without being nudged.</p></div></div>
+    <ol class="steps">
+      <li class="step spot" data-reveal><span class="step-n">1</span><h3>Sense</h3><p>Scout reads the feeds and hands Helm a short digest of whatever is moving.</p></li>
+      <li class="step spot" data-reveal><span class="step-n">2</span><h3>Make</h3><p>Quill and Prism turn the digest into copy and art, then Loom updates the page.</p></li>
+      <li class="step spot" data-reveal><span class="step-n">3</span><h3>Send</h3><p>Helm approves, Echo and Beacon deliver, and results feed the next round.</p></li>
+    </ol>
+  </section>
+
+  <section class="block" id="records" data-section="records">
+    <div class="block-head" data-reveal><div><h2>Records</h2><p class="sub">Every outside fact lives in one register. Anything not yet stated stays dark.</p></div></div>
+    <ul class="chips" data-reveal>{{CHIPS}}</ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <span class="foot-brand">Crewagent</span>
+  <span class="foot-note">Information only. Nothing here is financial advice.</span>
+</footer>
+
+<div class="status" aria-live="polite"><span class="pill pill-glass"><span class="dot"></span><span data-feed-label>Connecting</span></span></div>
+
+<script type="application/json" id="register">{{REGISTER}}</script>
+<script type="module" src="assets/main.js"></script>
+<noscript><p class="noscript">Scripts are off, so the live board is idle.</p></noscript>
+</body>
+</html>
